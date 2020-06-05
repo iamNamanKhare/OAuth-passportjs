@@ -1,0 +1,25 @@
+{
+  "name": "oauth-passportjs",
+  "version": "1.0.0",
+  "description": "A Simple Web Application to implement Google-OAuth Mechanism for User Authentication.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamNamanKhare/OAuth-passportjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamNamanKhare/OAuth-passportjs/issues"
+  },
+  "homepage": "https://github.com/iamNamanKhare/OAuth-passportjs#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
