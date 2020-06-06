@@ -3,12 +3,14 @@ const app = express()
 const authRoute = require('./routes/auth-routes')
 const profileRoute = require('./routes/profile-routes')
 const mongoose = require('mongoose')
-const passportSetup = require('./config/passport-setup')
+const passport = require('./config/passport-setup')
 const keys = require('./config/keys')
 const cookieSession = require('cookie-session')
-const passport = require('passport')
 
 const port = process.env.PORT || 4000
+
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
 // set up view engine
 app.set('view engine','ejs')
